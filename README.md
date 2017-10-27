@@ -25,7 +25,7 @@ _This is a web app that receives a number from a user and it displays numbers st
 * To open the folder in the text editor of choice, make sure you're in the correct directory, and if the default text editor is atom for example run this command $git atom . to open the folder
 
 ## Known Bugs
-_There's is not known bugs_
+_There's no known bugs_
 
 ## Technologies Used
 
