@@ -76,6 +76,46 @@ CLASSES
   background-color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
 }
+.navigation-icon {
+  display: none;
+  width: 40px;
+  padding: 16px;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  cursor: pointer;
+}
+.navigation-icon span{
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: block;
+  margin: 8px auto;
+  transition: all .3s ease-in-out;
+}
+.navigation-icon span:nth-child(1) {
+  top: 0;
+}
+.navigation-icon span:nth-child(2) {
+  top: 10px;
+}
+.navigation-icon span:nth-child(3) {
+  top: 20px;
+}
+.navigation-icon.active span:nth-child(1) {
+  transform: rotate(135deg);
+  top: 10px;
+}
+.navigation-icon.active span:nth-child(2) {
+  opacity: 0;
+  left: -40px;
+}
+.navigation-icon.active span:nth-child(3){
+  transform: rotate(-135deg);
+  top: 10px;
+}
 .intro-p {
   font-size: 1.5em;
   text-align: center;
@@ -110,4 +150,47 @@ div.container:after {
   text-align: center;
   font-size: 1.4em;
   line-height: 1.9em;
+}
+
+@media screen and (max-width: 1380px) {
+  .navigation {
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    display: none;
+    width: 100%;
+    position: relative;
+    padding: 0;
+  }
+  .navigation a {
+    display: block;
+    text-align: center;
+  }
+  .navigation-icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .main-header h1 {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 800px) {
+  .main-header h1 {
+    font-size: 1em;
+  }
+  .intro-p {
+    font-size: 1.1em;
+  }
+  .left {
+    float: none;
+    width: 100%;
+  }
+  .btn {
+    margin-top: 1.5em;
+  }
+  .right {
+    margin-top: 2em;
+    float: none;
+    width: 100%;
+  }
 }

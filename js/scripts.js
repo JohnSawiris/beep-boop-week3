@@ -1,26 +1,35 @@
+// ,
+//     numberThree = "I'm sorry, Dave. I'm afraid I can't do that.";
+
 /*
 =======================
 Backend Logic
 =======================
 */
 var beepBoop = function(max) {
+  var numbers = [0,1];
   var outputNumbers = [];
   var numberZero = "Beep!", numberOne = "Boop!",
-      numberThree = "I'm sorry, Dave. I'm afraid I can't do that.";
+  numberThree = "I'm sorry, Dave. I'm afraid I can't do that.";
 
-  for(var i = 0; i <= max; i++) {
-    outputNumbers.push(i);
-    if(i === 0){
-      outputNumbers[i] = numberZero; //if equal zero, it will change text
-    }
-    else if (i === 1) {
-      outputNumbers[i] = numberOne; //if equal one, it will change text
-    }
-    else if (i === 3) {
-      outputNumbers[i] = numberThree; //if equal three, it will change text
-    }
+  for(var x = 0; x <= max; x++) {
+    outputNumbers.push(x);
   }
-  return outputNumbers.join(", ");
+
+  outputNumbers.forEach(function(num) {
+    if(numbers.includes(outputNumbers[num])) {
+      if(outputNumbers[num] === numbers[0]) {
+        outputNumbers[num] = numberZero;
+      }
+      else if(outputNumbers[num] === numbers[1]){
+        outputNumbers[num] = numberOne;
+      }
+    }
+    else if(outputNumbers[num]%3 === 0) {
+      outputNumbers[num] = numberThree;
+    }
+  });
+  return outputNumbers.join(",  ");
 }
 
 /*
@@ -41,8 +50,14 @@ $(document).ready(function() {
     $("#user-number").val("");
     $("#output").text(beepBoop(userNumber));
   });//submit end
+
   $("#will-do").click(function() {
     $(".overlay").fadeOut(700);
     $(".overlay p").slideUp(500);
-  });//click end
+  });//will-do click end
+
+  $(".navigation-icon").click(function() {
+    $(this).toggleClass("active");
+    $(".navigation").slideToggle(700);
+  });//.navigation-icon click end
 });//ready end
