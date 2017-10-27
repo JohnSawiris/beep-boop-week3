@@ -1,11 +1,11 @@
 # _Beep Boop_
 
-#### _It is a web app takes numbers from a user and replace them with funny text_
+#### _It is a web app that takes numbers from a user and replace them with funny text_
 
 #### By _**John Sawiris**_
 
 ## Description
-This is a web the receives numbers input from a user and replace the number 0, 1 and any number that's divide by 3 with funny text.
+_This is a web app that receives a number from a user and it displays numbers starting from 0 to the number that the user entered after it replaced the numbers 0, 1, and any number that's divisible by 3_
 
 ## Setup
 
