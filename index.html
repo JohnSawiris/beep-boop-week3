@@ -16,22 +16,33 @@
     <!-- overlay section -->
     <div class="overlay">
         <p>Enter a Number Please!
-          <button type="button" class="btn btn-warning" name="button">Will Do!</button>
+          <button type="button" class="btn btn-warning" name="button" id="will-do">Will Do!</button>
         </p>
-
-
     </div>
-
+    <!-- navbar section -->
+    <header class="main-header">
+      <h1>Hello Dave!</h1>
+      <div class="navigation">
+        <a href="index.html">Home</a>
+        <a href="#">Testimonies</a>
+        <a href="#">Contacts</a>
+        <a href="#">About</a>
+      </div>
+    </header>
     <!-- container section -->
+    <p class="intro-p">I know your name might not be Dave, but go along with it :D</p>
     <div class="container">
-      <h1>Beep Boop</h1>
-      <form id="beep-form">
-        <label for="userinput">Enter a Number</label>
-        <input class="form-control form-control-lg" type="text" placeholder="Enter a Number" id="user-number">
+
+      <form id="beep-form" class="left">
+        <label for="userinput">Enter Numbers</label>
+        <input class="form-control form-control-lg" type="text" placeholder="Enter Numbers" id="user-number">
         <button type="submit" class="btn btn-primary" name="button" id="submit-btn">Beep Boop</button>
       </form>
-      <div class="jumbotron output-div">
-        <p id="output" class="result"></p>
+      <div class="right">
+        <p>Numbers will be displayed here:</p>
+        <div class="jumbotron output-div">
+          <p id="output" class="result"></p>
+        </div>
       </div>
     </div>
   </body>

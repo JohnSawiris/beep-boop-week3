@@ -5,8 +5,14 @@ body {
   position: relative;
   min-height: 100%;
   font-family: 'Josefin Sans', sans-serif;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.9);
 }
+/**
+CLASSES
+**/
 .overlay {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -16,11 +22,13 @@ body {
   z-index: 1000;
 }
 .overlay p {
+  display: none;
+  color: #000;
   background-color: #fff;
   position: absolute;
   text-align: center;
   width: 35%;
-  top: 35%;
+  top: 50%;
   left: 33%;
   padding: 4em 5em 2em;
   margin: 0;
@@ -35,13 +43,70 @@ body {
   padding: 0.5em .5em 0.4em;
   box-shadow: -1px 1px 10px 3px rgba(0, 0, 0, 0.2);
 }
-.btn {
+.main-header {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.main-header h1{
+  display: inline-block;
+  text-align: left;
+  width: 45%;
+  margin-right: 0;
+  font-size: 3em;
+  padding: .7em 0 .5em 1em;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+.navigation {
+  width: 45%;
+  padding: 2em 0;
+  display: inline-block;
+  text-align: right;
+}
+.navigation a{
+  padding: .7em;
+  font-size: 1.7em;
+  color: rgba(255, 255, 255, 0.9);
+  transition: all .5s ease-in-out;
+}
+.navigation a:not(:last-child) {
+  margin-right: .7em;
+}
+.navigation a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+.intro-p {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 2em 0;
+}
+div.container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.left {
+  float: left;
+  width: 44%;
+}
+#beep-form input {
   margin-top: 1em;
+  width: 80%;
+}
+.right {
+  float: right;
+  width: 55%;
+}
+.btn {
+  margin-top: 3.4em;
+  margin-left: .2em;
 }
 .jumbotron.output-div {
-  margin: 2em;
+  margin: 1.7em 0;
 }
 .result {
+  color: rgba(0, 0, 0, 0.8);
   text-align: center;
   font-size: 1.4em;
   line-height: 1.9em;
