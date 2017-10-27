@@ -1,6 +1,6 @@
 # _Beep Boop_
 
-#### _It is a web app that take numbers from a user and replace them with funny text_
+#### _It is a web app takes numbers from a user and replace them with funny text_
 
 #### By _**John Sawiris**_
 
