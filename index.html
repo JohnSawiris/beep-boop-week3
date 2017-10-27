@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Beep Boop</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <!-- overlay section -->
+    <div class="overlay">
+        <p>Enter a Number Please!
+          <button type="button" class="btn btn-warning" name="button">Will Do!</button>
+        </p>
+
+
+    </div>
+
+    <!-- container section -->
+    <div class="container">
+      <h1>Beep Boop</h1>
+      <form id="beep-form">
+        <label for="userinput">Enter a Number</label>
+        <input class="form-control form-control-lg" type="text" placeholder="Enter a Number" id="user-number">
+        <button type="submit" class="btn btn-primary" name="button" id="submit-btn">Beep Boop</button>
+      </form>
+      <div class="jumbotron output-div">
+        <p id="output" class="result"></p>
+      </div>
+    </div>
+  </body>
+</html>
