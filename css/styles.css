@@ -23,7 +23,7 @@ CLASSES
 }
 .overlay p {
   display: none;
-  color: #000;
+  color: rgba(0,0,0,.8);
   background-color: #fff;
   position: absolute;
   text-align: center;
@@ -173,8 +173,22 @@ div.container:after {
   .main-header h1 {
     font-size: 2em;
   }
+  .overlay p {
+    font-size: 1em;
+    color: rgba(0,0,0,.8);
+  }
+  .overlay button {
+    width: 40%;
+    padding-right: 10px;
+  }
 }
 @media screen and (max-width: 800px) {
+  .overlay p {
+    padding: 1em 1em;
+  }
+  .overlay button {
+    width: 60%;
+  }
   .main-header h1 {
     font-size: 1em;
   }
